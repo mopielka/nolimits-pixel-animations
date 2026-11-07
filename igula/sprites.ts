@@ -121,6 +121,9 @@ export const sprites: Record<string, SpriteDef> = {
   'cat-sit-wag': cat([...CAT_TAIL_DOWN, CAT_LEGS.sit]),
   'cat-sit-left': cat(flip([...CAT_BODY, CAT_LEGS.sit])),
   'cat-sit-left-wag': cat(flip([...CAT_TAIL_DOWN, CAT_LEGS.sit])),
+  // Curled up facing left, eyes closed.
+  'cat-sleep': cat(['k.o.....', 'wkwwowkk', 'nwwwwwwk']),
+  z: { palette: { z: '#bfe8ff' }, rows: ['zzzz', '..z.', '.z..', 'zzzz'] },
   house: HOUSE,
   iga: dot(IGA),
   michal: dot(MICHAL),

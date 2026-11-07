@@ -15,6 +15,26 @@ const MIDDLE = { x: 14, y: 8 };
 /** Days from 17.07 to the visit on 16.11. */
 const DAYS_TOGETHER = 122;
 
+/** Skolim – "Daj mi jedno słowo", measured from skolim.mp3: 138.65 BPM, first beat 0.42 s in. */
+const BEAT = 60 / 138.65;
+const FIRST_BEAT = 0.42;
+
+/** Scene lengths in seconds; checked against the scenes at the end so beat sync can't drift. */
+const LENGTH = { intro: 10, map: 19, heart: 14.2, move: 10.5, finale: 16.3, outro: 60 };
+const START = (() => {
+  let t = 0;
+  return Object.fromEntries(Object.entries(LENGTH).map(([k, len]) => [k, (t += len) - len])) as Record<keyof typeof LENGTH, number>;
+})();
+
+/** Scene-local times in [from, to) that fall on every `every`-th beat of the song. */
+function beats(sceneStart: number, from: number, to: number, every = 2): number[] {
+  const step = BEAT * every;
+  const times: number[] = [];
+  let k = Math.ceil((sceneStart + from - FIRST_BEAT) / step);
+  for (let t = FIRST_BEAT + k * step - sceneStart; t < to; t = FIRST_BEAT + ++k * step - sceneStart) times.push(t);
+  return times;
+}
+
 const fadeIn = (at: number, length = 0.6): Keyframe[] => [
   { t: at, opacity: 0 },
   { t: at + length, opacity: 1 },
@@ -122,25 +142,22 @@ const map: LayersScene = {
   ],
 };
 
-const BEAT_EVERY = 1.2;
-const GROWN = 2.5;
 const SHRINK_FROM = 13;
 
-/** "Lub-dub": two quick contractions, then rest. */
+/** "Lub-dub" on every other beat of the song – about 69 a minute, a calm heart. */
 function heartbeats(start: number, end: number): Keyframe[] {
-  const keys: Keyframe[] = [];
-  for (let t = start; t < end; t += BEAT_EVERY) {
-    keys.push(
-      { t, sprite: HEART_BEAT },
-      { t: t + 0.12, sprite: HEART_FULL },
-      { t: t + 0.24, sprite: HEART_BEAT },
-      { t: t + 0.36, sprite: HEART_FULL },
-    );
-  }
-  return keys;
+  return beats(START.heart, start, end).flatMap((t) => [
+    { t, sprite: HEART_BEAT },
+    { t: t + 0.12, sprite: HEART_FULL },
+    { t: t + 0.24, sprite: HEART_BEAT },
+    { t: t + 0.36, sprite: HEART_FULL },
+  ]);
 }
 
-const growth: Keyframe[] = HEART_STEPS.map((sprite, i) => ({ t: (i * GROWN) / (HEART_STEPS.length - 1), sprite }));
+/** The spark grows one size per beat. */
+const growthBeats = [0, ...beats(START.heart, 0.1, 5, 1).slice(0, HEART_STEPS.length - 1)];
+const GROWN = growthBeats.at(-1)!;
+const growth: Keyframe[] = HEART_STEPS.map((sprite, i) => ({ t: growthBeats[i], sprite }));
 const shrink: Keyframe[] = HEART_STEPS.slice(0, -1)
   .reverse()
   .map((sprite, i) => ({ t: SHRINK_FROM + i * 0.2, sprite }));
@@ -287,7 +304,6 @@ const finale: LayersScene = {
       name: 'cat pushing',
       sprite: 'cat-right-a',
       ...catLeftOf(offRight, 1),
-      to: FINALE_FADE + 1.2,
       keyframes: [
         // KOCHAM fills the width, so the cat can't push it and stay in sight: it tows it
         // in from the right and walks off the left edge...
@@ -302,8 +318,8 @@ const finale: LayersScene = {
         { t: CAT_STROLL.from, x: CIE_HOME - 8, y: 10 },
         { t: CAT_STROLL.to, x: 21, y: 12, ease: 'in-out' },
         ...walk(CAT_STROLL.from, CAT_STROLL.to, 'right'),
-        ...sitAndWag(CAT_STROLL.to, FINALE_FADE, 'left'),
-        ...fadeOut(FINALE_FADE, 1.2),
+        // Stays for the outro, which picks the cat, the heart and the dots up where they are.
+        ...sitAndWag(CAT_STROLL.to, FINALE_END, 'left'),
       ],
     },
     {
@@ -315,8 +331,7 @@ const finale: LayersScene = {
       from: 9.6,
       keyframes: [
         ...fadeIn(9.6, 0.4),
-        ...Array.from({ length: 8 }, (_, i): Keyframe => ({ t: 10 + i * 0.6, sprite: HEART_STEPS[i % 2 ? 1 : 2] })),
-        ...fadeOut(FINALE_FADE, 1.2),
+        ...beats(START.finale, 10, FINALE_END).map((t, i): Keyframe => ({ t, sprite: HEART_STEPS[i % 2 ? 1 : 2] })),
       ],
     },
     {
@@ -335,16 +350,140 @@ const finale: LayersScene = {
       x: [9, 17][i],
       y: 13,
       from: 10.2,
-      keyframes: [...fadeIn(10.2, 0.4), { t: 10.2, x: [9, 17][i] }, { t: 11.2, x: [12, 14][i], ease: 'out' }, ...fadeOut(FINALE_FADE, 1.2)],
+      keyframes: [...fadeIn(10.2, 0.4), { t: 10.2, x: [9, 17][i] }, { t: 11.2, x: [12, 14][i], ease: 'out' }],
     })),
   ],
 };
 
+/** "1.06", "2.06", … up to the day of the first message. */
+function datesUntilFirstMessage(): string[] {
+  const dates: string[] = [];
+  for (let d = 1; d <= 30; d++) dates.push(`${d}.06`);
+  for (let d = 1; d <= 15; d++) dates.push(`${d}.07`);
+  return dates;
+}
+
+/** Days on Boo fly by, slow down, and stop on 15.07. */
+function dateTicks(from: number): Keyframe[] {
+  const dates = datesUntilFirstMessage();
+  const last = dates.length - 1;
+  let t = from;
+  return dates.map((text, i) => {
+    if (i > 0) t += 0.06 + 0.3 * (Math.exp(-i / 3) + Math.exp(-(last - i) / 2.5));
+    return { t, text };
+  });
+}
+
+const ticks = dateTicks(3.3);
+const STOPPED = ticks.at(-1)!.t;
+const INTRO_FADE = 9.3;
+
+const intro: LayersScene = {
+  type: 'layers',
+  name: 'Boo: 1.06 … 15.07',
+  duration: LENGTH.intro,
+  transition: { type: 'fade', duration: 3 },
+  layers: [
+    { name: 'BOO', text: 'BOO', color: '#ffd23f', anchor: 'center', x: MIDDLE.x, y: 4.5, keyframes: fadeOut(INTRO_FADE, 0.6) },
+    {
+      name: 'dates',
+      text: ticks[0].text,
+      anchor: 'center',
+      x: MIDDLE.x,
+      y: 11,
+      keyframes: [
+        ...ticks,
+        // The day it stops on turns Michał's colour: his first message.
+        { t: STOPPED + 0.1, color: '#ffffff' },
+        { t: STOPPED + 0.6, color: MICHAL },
+        ...fadeOut(INTRO_FADE, 0.6),
+      ],
+    },
+  ],
+};
+
+const OUTRO_FADE = LENGTH.outro - 6;
+const NAP_AT = 12;
+
+/** The last minute, while the song plays on: a softly glowing heart over the two of us and a cat having a nap. */
+const outro: LayersScene = {
+  type: 'layers',
+  name: 'outro: the heart keeps beating',
+  duration: LENGTH.outro,
+  layers: [
+    ...(['michal', 'iga'] as const).map((sprite, i): Layer => ({
+      name: `${sprite} together`,
+      sprite,
+      x: [12, 14][i],
+      y: 13,
+      keyframes: fadeOut(OUTRO_FADE, 6),
+    })),
+    {
+      name: 'heart',
+      sprite: HEART_STEPS[2],
+      anchor: 'center',
+      x: MIDDLE.x,
+      y: 3,
+      opacity: 1,
+      keyframes: [
+        { t: 0, y: 3 },
+        { t: 1.6, y: 6.5, ease: 'in-out' },
+        { t: 1.6, sprite: HEART_STEPS[3] },
+        // A soft glow on every other beat instead of a size change: lub, dub, rest.
+        ...beats(START.outro, 2, OUTRO_FADE).flatMap((t): Keyframe[] => [
+          { t, opacity: 1 },
+          { t: t + 0.15, opacity: 0.8 },
+          { t: t + 0.25, opacity: 0.95 },
+          { t: t + 0.45, opacity: 0.8, ease: 'out' },
+        ]),
+        { t: OUTRO_FADE, opacity: 0.8 },
+        { t: LENGTH.outro, opacity: 0 },
+      ],
+    },
+    {
+      name: 'cat',
+      sprite: 'cat-sit-left',
+      x: 21,
+      y: 12,
+      keyframes: [
+        ...[3, 6, 9].flatMap((t): Keyframe[] => [
+          { t, sprite: 'cat-sit-left-wag' },
+          { t: t + 0.25, sprite: 'cat-sit-left' },
+        ]),
+        { t: NAP_AT, sprite: 'cat-sleep', x: 20, y: 13 },
+        ...fadeOut(OUTRO_FADE, 6),
+      ],
+    },
+    ...Array.from({ length: 6 }, (_, i): Layer => {
+      const t = NAP_AT + 3 + i * 6.5;
+      return {
+        name: 'z',
+        sprite: 'z',
+        x: 20,
+        y: 10,
+        from: t,
+        to: t + 3,
+        keyframes: [
+          { t, x: 20, y: 10, opacity: 0 },
+          { t: t + 0.6, opacity: 1 },
+          { t: t + 3, x: 23, y: 5, opacity: 0 },
+        ],
+      };
+    }),
+  ],
+};
+
+const scenes = [intro, map, heart, move2027, finale, outro];
+for (const [scene, length] of scenes.map((s, i) => [s, Object.values(LENGTH)[i]] as const)) {
+  if (scene.duration !== length) throw new Error(`${scene.name}: duration ${scene.duration} ≠ LENGTH ${length}`);
+}
+
 const animation: Omit<Animation, 'width' | 'height' | 'fps' | 'background'> = {
   version: 1,
   title: 'Igula',
+  audio: { src: 'skolim.mp3', fadeOut: 6 },
   sprites,
-  scenes: [map, heart, move2027, finale],
+  scenes,
 };
 
 writeFileSync(join(import.meta.dirname, 'index.json'), JSON.stringify(animation, null, 2) + '\n');

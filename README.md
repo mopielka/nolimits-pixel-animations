@@ -2,7 +2,7 @@
 
 Private animations for the Pixel LED floor. The tools (format, build, player) live in the public repo [mopielka/nolimits-pixel](https://github.com/mopielka/nolimits-pixel), included here as the `pixel/` submodule.
 
-- `igula/` – the animation for Iga, 16.11.2026 (60 s). `generate.ts` + `sprites.ts` write `index.json`.
+- `igula/` – the animation for Iga, 16.11.2026: 2:10 with Skolim – "Daj mi jedno słowo" (`skolim.mp3`, heartbeats synced to its 138.65 BPM). `generate.ts` + `sprites.ts` write `index.json`.
 
 ## Setup
 
