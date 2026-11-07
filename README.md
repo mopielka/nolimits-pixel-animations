@@ -22,11 +22,9 @@ node --watch igula/generate.ts                           # …on every save
 (cd pixel && npm run build -- ../igula --out ../out)     # → out/igula/: PNG frames, igula.zip for the school, previews
 ```
 
-**Watch it:** open https://mopielka.github.io/nolimits-pixel-player/ and drop `igula/index.json` onto the page (or a ZIP of the folder, which also carries the music). For live reload while editing, run the player locally against this folder:
+**Watch it:** open https://mopielka.github.io/nolimits-pixel-player/ and drop `igula/index.json` onto the page (or a ZIP of the folder, which also carries the music). Locally, `(cd pixel && npm run web)` gives the same player.
 
-```bash
-(cd pixel && npm run web)   # then drop ../igula/index.json, or symlink: ln -s ../../igula pixel/animations/igula
-```
+Don't copy or symlink this animation into `pixel/animations/` – the player bundles everything there, and `npm run web:deploy` would publish it.
 
 ## Music
 
