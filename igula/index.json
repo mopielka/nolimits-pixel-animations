@@ -1,0 +1,1867 @@
+{
+  "version": 1,
+  "title": "Igula",
+  "sprites": {
+    "cat-right-a": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k...o.k",
+        "kowwwew",
+        ".wkkwwn",
+        ".w..w.."
+      ]
+    },
+    "cat-right-b": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k...o.k",
+        "kowwwew",
+        ".wkkwwn",
+        "..ww..."
+      ]
+    },
+    "cat-left-a": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k.o...k",
+        "wewwwok",
+        "nwwkkw.",
+        "..w..w."
+      ]
+    },
+    "cat-left-b": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k.o...k",
+        "wewwwok",
+        "nwwkkw.",
+        "...ww.."
+      ]
+    },
+    "cat-sit": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k...o.k",
+        "kowwwew",
+        ".wkkwwn",
+        ".www.w."
+      ]
+    },
+    "cat-sit-wag": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "....o.k",
+        "kowwwew",
+        ".wkkwwn",
+        ".www.w."
+      ]
+    },
+    "cat-sit-left": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k.o...k",
+        "wewwwok",
+        "nwwkkw.",
+        ".w.www."
+      ]
+    },
+    "cat-sit-left-wag": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        "k.o....",
+        "wewwwok",
+        "nwwkkw.",
+        ".w.www."
+      ]
+    },
+    "house": {
+      "palette": {
+        "y": "#ffcc33"
+      },
+      "rows": [
+        ".....yy.....",
+        "....y..y....",
+        "...y....y...",
+        "..y......y..",
+        ".y........y.",
+        "yyyyyyyyyyyy",
+        ".y........y.",
+        ".y........y.",
+        ".y........y.",
+        ".yyyyyyyyyy."
+      ]
+    },
+    "iga": {
+      "palette": {
+        "o": "#ff4fa3"
+      },
+      "rows": [
+        "oo",
+        "oo"
+      ]
+    },
+    "michal": {
+      "palette": {
+        "o": "#33e6ff"
+      },
+      "rows": [
+        "oo",
+        "oo"
+      ]
+    },
+    "heart-1": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        "rr",
+        "rr"
+      ]
+    },
+    "heart-2": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        "rr.rr",
+        "rrrrr",
+        ".rrr.",
+        "..r.."
+      ]
+    },
+    "heart-3": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        ".rr.rr.",
+        "rrrrrrr",
+        "rrrrrrr",
+        ".rrrrr.",
+        "..rrr..",
+        "...r..."
+      ]
+    },
+    "heart-4": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        ".rrr...rrr.",
+        "rrrrr.rrrrr",
+        "rrrrrrrrrrr",
+        "rrrrrrrrrrr",
+        ".rrrrrrrrr.",
+        "..rrrrrrr..",
+        "...rrrrr...",
+        "....rrr....",
+        ".....r....."
+      ]
+    },
+    "heart-5": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        "..rrrr.....rrrr..",
+        ".rrrrrr...rrrrrr.",
+        "rrrrrrrr.rrrrrrrr",
+        "rrrrrrrrrrrrrrrrr",
+        "rrrrrrrrrrrrrrrrr",
+        "rrrrrrrrrrrrrrrrr",
+        ".rrrrrrrrrrrrrrr.",
+        "..rrrrrrrrrrrrr..",
+        "...rrrrrrrrrrr...",
+        "....rrrrrrrrr....",
+        ".....rrrrrrr.....",
+        "......rrrrr......",
+        ".......rrr.......",
+        "........r........"
+      ]
+    },
+    "heart-6": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        "...rrrrr........rrrrr...",
+        ".rrrrrrrrr....rrrrrrrrr.",
+        "rrrrrrrrrrr..rrrrrrrrrrr",
+        "rrrrrrrrrrrrrrrrrrrrrrrr",
+        "rrrrrrrrrrrrrrrrrrrrrrrr",
+        "rrrrrrrrrrrrrrrrrrrrrrrr",
+        ".rrrrrrrrrrrrrrrrrrrrrr.",
+        "..rrrrrrrrrrrrrrrrrrrr..",
+        "...rrrrrrrrrrrrrrrrrr...",
+        "....rrrrrrrrrrrrrrrr....",
+        ".....rrrrrrrrrrrrrr.....",
+        ".......rrrrrrrrrr.......",
+        ".........rrrrrr.........",
+        "...........rr..........."
+      ]
+    },
+    "heart-beat": {
+      "palette": {
+        "r": "#ff1a2e"
+      },
+      "rows": [
+        "........................",
+        "...rrrrr........rrrrr...",
+        ".rrrrrrrrr....rrrrrrrrr.",
+        ".rrrrrrrrrr..rrrrrrrrrr.",
+        ".rrrrrrrrrrrrrrrrrrrrrr.",
+        ".rrrrrrrrrrrrrrrrrrrrrr.",
+        "..rrrrrrrrrrrrrrrrrrrr..",
+        "...rrrrrrrrrrrrrrrrrr...",
+        "....rrrrrrrrrrrrrrrr....",
+        ".....rrrrrrrrrrrrrr.....",
+        ".......rrrrrrrrrr.......",
+        ".........rrrrrr.........",
+        "...........rr...........",
+        "........................"
+      ]
+    },
+    "cat-head": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        ".b.......b.",
+        "bob.....bkb",
+        "boobbbbbkkb",
+        "boowwwwwkkb",
+        "bwewwwwwewb",
+        "bwwwwnwwwwb",
+        "bwwwkwkwwwb",
+        ".bwwwwwwwb.",
+        "..bbbbbbb.."
+      ]
+    },
+    "cat-head-blink": {
+      "palette": {
+        "w": "#ffffff",
+        "o": "#ff8c1a",
+        "k": "#5a5a5a",
+        "e": "#7dff4f",
+        "n": "#ff8fb8",
+        "b": "#000000"
+      },
+      "rows": [
+        ".b.......b.",
+        "bob.....bkb",
+        "boobbbbbkkb",
+        "boowwwwwkkb",
+        "bwkwwwwwkwb",
+        "bwwwwnwwwwb",
+        "bwwwkwkwwwb",
+        ".bwwwwwwwb.",
+        "..bbbbbbb.."
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "type": "layers",
+      "name": "Wrocław – Konin: 17.07 and 4.08",
+      "duration": 19,
+      "layers": [
+        {
+          "name": "michal at WRO",
+          "sprite": "michal",
+          "x": 2,
+          "y": 12,
+          "to": 11.2,
+          "keyframes": [
+            {
+              "t": 0,
+              "opacity": 0
+            },
+            {
+              "t": 0.6,
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "WRO",
+          "text": "WRO",
+          "color": "#33e6ff",
+          "x": 5,
+          "y": 10,
+          "to": 4,
+          "keyframes": [
+            {
+              "t": 0.3,
+              "opacity": 0
+            },
+            {
+              "t": 0.8999999999999999,
+              "opacity": 1
+            },
+            {
+              "t": 3.2,
+              "opacity": 1
+            },
+            {
+              "t": 3.7,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "iga at KONIN",
+          "sprite": "iga",
+          "x": 24,
+          "y": 2,
+          "keyframes": [
+            {
+              "t": 1.2,
+              "opacity": 0
+            },
+            {
+              "t": 1.7999999999999998,
+              "opacity": 1
+            },
+            {
+              "t": 17.6,
+              "x": 24,
+              "y": 2
+            },
+            {
+              "t": 18.8,
+              "x": 14,
+              "y": 7,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "KONIN",
+          "text": "KONIN",
+          "color": "#ff4fa3",
+          "x": 0,
+          "y": 1,
+          "to": 4,
+          "keyframes": [
+            {
+              "t": 1.5,
+              "opacity": 0
+            },
+            {
+              "t": 2.1,
+              "opacity": 1
+            },
+            {
+              "t": 3.2,
+              "opacity": 1
+            },
+            {
+              "t": 3.7,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#33e6ff",
+          "from": 3.6,
+          "to": 4.6,
+          "x": 2.5,
+          "y": 12.5,
+          "keyframes": [
+            {
+              "t": 3.6,
+              "x": 2.5,
+              "y": 12.5
+            },
+            {
+              "t": 4.6,
+              "x": 24.5,
+              "y": 2.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "15.07 – first message",
+          "text": "15.07",
+          "color": "#33e6ff",
+          "x": 14,
+          "y": 7.5,
+          "anchor": "center",
+          "from": 4.7,
+          "to": 6.3,
+          "keyframes": [
+            {
+              "t": 4.7,
+              "opacity": 0
+            },
+            {
+              "t": 5.1000000000000005,
+              "opacity": 1
+            },
+            {
+              "t": 5.8999999999999995,
+              "opacity": 1
+            },
+            {
+              "t": 6.3,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#ff4fa3",
+          "from": 6.5,
+          "to": 7.5,
+          "x": 24.5,
+          "y": 2.5,
+          "keyframes": [
+            {
+              "t": 6.5,
+              "x": 24.5,
+              "y": 2.5
+            },
+            {
+              "t": 7.5,
+              "x": 2.5,
+              "y": 12.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "17.07 – she replied",
+          "text": "17.07",
+          "color": "#ff4fa3",
+          "x": 14,
+          "y": 7.5,
+          "anchor": "center",
+          "from": 7.6,
+          "to": 9.3,
+          "keyframes": [
+            {
+              "t": 7.6,
+              "opacity": 0
+            },
+            {
+              "t": 8,
+              "opacity": 1
+            },
+            {
+              "t": 8.9,
+              "opacity": 1
+            },
+            {
+              "t": 9.3,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#ff4fa3",
+          "from": 9.4,
+          "to": 10,
+          "x": 24.5,
+          "y": 2.5,
+          "keyframes": [
+            {
+              "t": 9.4,
+              "x": 24.5,
+              "y": 2.5
+            },
+            {
+              "t": 10,
+              "x": 2.5,
+              "y": 12.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#33e6ff",
+          "from": 9.9,
+          "to": 10.5,
+          "x": 2.5,
+          "y": 12.5,
+          "keyframes": [
+            {
+              "t": 9.9,
+              "x": 2.5,
+              "y": 12.5
+            },
+            {
+              "t": 10.5,
+              "x": 24.5,
+              "y": 2.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#ff4fa3",
+          "from": 10.275,
+          "to": 10.875,
+          "x": 24.5,
+          "y": 2.5,
+          "keyframes": [
+            {
+              "t": 10.275,
+              "x": 24.5,
+              "y": 2.5
+            },
+            {
+              "t": 10.875,
+              "x": 2.5,
+              "y": 12.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "rect": [
+            1,
+            1
+          ],
+          "color": "#33e6ff",
+          "from": 10.55625,
+          "to": 11.15625,
+          "x": 2.5,
+          "y": 12.5,
+          "keyframes": [
+            {
+              "t": 10.55625,
+              "x": 2.5,
+              "y": 12.5
+            },
+            {
+              "t": 11.15625,
+              "x": 24.5,
+              "y": 2.5,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "trail",
+          "sprite": "michal",
+          "opacity": 0.3,
+          "from": 11.2,
+          "to": 17.6,
+          "x": 2,
+          "y": 12,
+          "keyframes": [
+            {
+              "t": 11.44,
+              "x": 2,
+              "y": 12
+            },
+            {
+              "t": 13.94,
+              "x": 22,
+              "y": 4,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "trail",
+          "sprite": "michal",
+          "opacity": 0.6,
+          "from": 11.2,
+          "to": 17.6,
+          "x": 2,
+          "y": 12,
+          "keyframes": [
+            {
+              "t": 11.319999999999999,
+              "x": 2,
+              "y": 12
+            },
+            {
+              "t": 13.819999999999999,
+              "x": 22,
+              "y": 4,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "michal",
+          "sprite": "michal",
+          "opacity": 1,
+          "from": 11.2,
+          "to": 17.6,
+          "x": 2,
+          "y": 12,
+          "keyframes": [
+            {
+              "t": 11.2,
+              "x": 2,
+              "y": 12
+            },
+            {
+              "t": 13.7,
+              "x": 22,
+              "y": 4,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "4.08",
+          "text": "4.08",
+          "x": 2,
+          "y": 2,
+          "from": 13.9,
+          "to": 17.6,
+          "keyframes": [
+            {
+              "t": 13.9,
+              "opacity": 0
+            },
+            {
+              "t": 14.3,
+              "opacity": 1
+            },
+            {
+              "t": 17,
+              "opacity": 1
+            },
+            {
+              "t": 17.5,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "KONIN again",
+          "text": "KONIN",
+          "color": "#ff4fa3",
+          "x": 1,
+          "y": 10,
+          "from": 14.6,
+          "to": 17.6,
+          "keyframes": [
+            {
+              "t": 14.6,
+              "opacity": 0
+            },
+            {
+              "t": 15.1,
+              "opacity": 1
+            },
+            {
+              "t": 17,
+              "opacity": 1
+            },
+            {
+              "t": 17.5,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "michal to centre",
+          "sprite": "michal",
+          "from": 17.6,
+          "x": 22,
+          "y": 4,
+          "keyframes": [
+            {
+              "t": 17.6,
+              "x": 22,
+              "y": 4
+            },
+            {
+              "t": 18.8,
+              "x": 12,
+              "y": 7,
+              "ease": "in-out"
+            }
+          ]
+        },
+        {
+          "name": "spark",
+          "rect": [
+            2,
+            2
+          ],
+          "color": "#ff1a2e",
+          "x": 13,
+          "y": 7,
+          "from": 18.8
+        }
+      ]
+    },
+    {
+      "type": "layers",
+      "name": "heart: 122 days and a cat",
+      "duration": 14.2,
+      "layers": [
+        {
+          "name": "michal fading",
+          "sprite": "michal",
+          "x": 12,
+          "y": 7,
+          "to": 0.6,
+          "keyframes": [
+            {
+              "t": 0,
+              "opacity": 1
+            },
+            {
+              "t": 0.5,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "iga fading",
+          "sprite": "iga",
+          "x": 14,
+          "y": 7,
+          "to": 0.6,
+          "keyframes": [
+            {
+              "t": 0,
+              "opacity": 1
+            },
+            {
+              "t": 0.5,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "heart",
+          "sprite": "heart-1",
+          "anchor": "center",
+          "x": 14,
+          "y": 8,
+          "to": 14,
+          "keyframes": [
+            {
+              "t": 0,
+              "sprite": "heart-1"
+            },
+            {
+              "t": 0.5,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 1,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 1.5,
+              "sprite": "heart-4"
+            },
+            {
+              "t": 2,
+              "sprite": "heart-5"
+            },
+            {
+              "t": 2.5,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 3.3,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 3.42,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 3.54,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 3.6599999999999997,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 4.5,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 4.62,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 4.74,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 4.86,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 5.7,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 5.82,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 5.94,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 6.0600000000000005,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 6.9,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 7.0200000000000005,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 7.140000000000001,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 7.260000000000001,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 8.1,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 8.219999999999999,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 8.34,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 8.459999999999999,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 9.299999999999999,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 9.419999999999998,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 9.54,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 9.659999999999998,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 10.499999999999998,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 10.619999999999997,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 10.739999999999998,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 10.859999999999998,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 11.699999999999998,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 11.819999999999997,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 11.939999999999998,
+              "sprite": "heart-beat"
+            },
+            {
+              "t": 12.059999999999997,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 12.8,
+              "sprite": "heart-6"
+            },
+            {
+              "t": 13,
+              "sprite": "heart-5"
+            },
+            {
+              "t": 13.2,
+              "sprite": "heart-4"
+            },
+            {
+              "t": 13.4,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 13.6,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 13.8,
+              "sprite": "heart-1"
+            }
+          ]
+        },
+        {
+          "name": "days",
+          "text": "122",
+          "y": 6.5,
+          "anchor": "center",
+          "x": 14,
+          "from": 3.8,
+          "to": 6.4,
+          "keyframes": [
+            {
+              "t": 3.8,
+              "opacity": 0
+            },
+            {
+              "t": 4.1,
+              "opacity": 1
+            },
+            {
+              "t": 6.1000000000000005,
+              "opacity": 1
+            },
+            {
+              "t": 6.4,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "DNI",
+          "text": "DNI",
+          "y": 6.5,
+          "anchor": "center",
+          "x": 14,
+          "from": 6.6,
+          "to": 9,
+          "keyframes": [
+            {
+              "t": 6.6,
+              "opacity": 0
+            },
+            {
+              "t": 6.8999999999999995,
+              "opacity": 1
+            },
+            {
+              "t": 8.7,
+              "opacity": 1
+            },
+            {
+              "t": 9,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "cat",
+          "sprite": "cat-head",
+          "y": 7.5,
+          "keyframes": [
+            {
+              "t": 9.3,
+              "opacity": 0
+            },
+            {
+              "t": 9.600000000000001,
+              "opacity": 1
+            },
+            {
+              "t": 12.5,
+              "opacity": 1
+            },
+            {
+              "t": 12.8,
+              "opacity": 0
+            },
+            {
+              "t": 10.6,
+              "sprite": "cat-head-blink"
+            },
+            {
+              "t": 10.75,
+              "sprite": "cat-head"
+            },
+            {
+              "t": 11.9,
+              "sprite": "cat-head-blink"
+            },
+            {
+              "t": 12.05,
+              "sprite": "cat-head"
+            }
+          ],
+          "anchor": "center",
+          "x": 14,
+          "from": 9.3,
+          "to": 12.8
+        }
+      ]
+    },
+    {
+      "type": "layers",
+      "name": "2027: moving to Wrocław together",
+      "duration": 10.5,
+      "layers": [
+        {
+          "name": "2027",
+          "text": "2027",
+          "x": 14,
+          "y": 10,
+          "anchor": "center",
+          "to": 2.8,
+          "keyframes": [
+            {
+              "t": 0.3,
+              "opacity": 0
+            },
+            {
+              "t": 0.8999999999999999,
+              "opacity": 1
+            },
+            {
+              "t": 2.3,
+              "opacity": 1
+            },
+            {
+              "t": 2.8,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "michal moving",
+          "sprite": "michal",
+          "x": 20,
+          "y": 4,
+          "keyframes": [
+            {
+              "t": 0,
+              "opacity": 0
+            },
+            {
+              "t": 0.6,
+              "opacity": 1
+            },
+            {
+              "t": 2.8,
+              "x": 20,
+              "y": 4
+            },
+            {
+              "t": 7,
+              "x": 4,
+              "y": 13,
+              "ease": "in-out"
+            },
+            {
+              "t": 9.8,
+              "opacity": 1
+            },
+            {
+              "t": 10.4,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "iga moving",
+          "sprite": "iga",
+          "x": 23,
+          "y": 4,
+          "keyframes": [
+            {
+              "t": 0,
+              "opacity": 0
+            },
+            {
+              "t": 0.6,
+              "opacity": 1
+            },
+            {
+              "t": 2.8,
+              "x": 23,
+              "y": 4
+            },
+            {
+              "t": 7,
+              "x": 7,
+              "y": 13,
+              "ease": "in-out"
+            },
+            {
+              "t": 9.8,
+              "opacity": 1
+            },
+            {
+              "t": 10.4,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "house",
+          "sprite": "house",
+          "x": 1,
+          "y": 6,
+          "from": 7,
+          "keyframes": [
+            {
+              "t": 7,
+              "opacity": 0
+            },
+            {
+              "t": 7.7,
+              "opacity": 1
+            },
+            {
+              "t": 9.8,
+              "opacity": 1
+            },
+            {
+              "t": 10.4,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "cat moving in",
+          "sprite": "cat-left-a",
+          "x": 20,
+          "y": 0,
+          "from": 1,
+          "keyframes": [
+            {
+              "t": 1,
+              "opacity": 0
+            },
+            {
+              "t": 1.5,
+              "opacity": 1
+            },
+            {
+              "t": 3.0999999999999996,
+              "x": 20,
+              "y": 0
+            },
+            {
+              "t": 7.3,
+              "x": 3,
+              "y": 2,
+              "ease": "in-out"
+            },
+            {
+              "t": 3.0999999999999996,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 3.3,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 3.5,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 3.7,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 3.9000000000000004,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 4.1000000000000005,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 4.300000000000001,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 4.500000000000001,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 4.700000000000001,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 4.900000000000001,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 5.100000000000001,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 5.300000000000002,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 5.500000000000002,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 5.700000000000002,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 5.900000000000002,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 6.100000000000002,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 6.3000000000000025,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 6.500000000000003,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 6.700000000000003,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 6.900000000000003,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 7.100000000000003,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 7.3,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 8.3,
+              "sprite": "cat-sit-wag"
+            },
+            {
+              "t": 8.55,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 9.3,
+              "sprite": "cat-sit-wag"
+            },
+            {
+              "t": 9.55,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 9.8,
+              "opacity": 1
+            },
+            {
+              "t": 10.4,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "WRO",
+          "text": "WRO",
+          "color": "#33e6ff",
+          "x": 14,
+          "y": 10,
+          "from": 8,
+          "keyframes": [
+            {
+              "t": 8,
+              "opacity": 0
+            },
+            {
+              "t": 8.6,
+              "opacity": 1
+            },
+            {
+              "t": 9.8,
+              "opacity": 1
+            },
+            {
+              "t": 10.4,
+              "opacity": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "layers",
+      "name": "KOCHAM CIĘ, IGULA",
+      "duration": 16.3,
+      "layers": [
+        {
+          "name": "KOCHAM pulled in by the cat",
+          "text": "KOCHAM",
+          "color": "#ff1a2e",
+          "x": 36,
+          "y": 1,
+          "to": 9.1,
+          "keyframes": [
+            {
+              "t": 0.6,
+              "x": 36
+            },
+            {
+              "t": 3.4,
+              "x": 1,
+              "ease": "in-out"
+            },
+            {
+              "t": 8.6,
+              "opacity": 1
+            },
+            {
+              "t": 9.1,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "CIĘ pushed in by the cat",
+          "text": "CIĘ",
+          "color": "#ff1a2e",
+          "x": -11,
+          "y": 9,
+          "to": 9.1,
+          "keyframes": [
+            {
+              "t": 3.7,
+              "x": -11
+            },
+            {
+              "t": 6,
+              "x": 8,
+              "ease": "in-out"
+            },
+            {
+              "t": 8.6,
+              "opacity": 1
+            },
+            {
+              "t": 9.1,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "cat pushing",
+          "sprite": "cat-right-a",
+          "x": 28,
+          "y": 2,
+          "to": 15.799999999999999,
+          "keyframes": [
+            {
+              "t": 0.6,
+              "x": 28,
+              "y": 2
+            },
+            {
+              "t": 3.4,
+              "x": -7,
+              "y": 2,
+              "ease": "in-out"
+            },
+            {
+              "t": 0.6,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 0.8,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 1,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 1.2,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 1.4,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 1.5999999999999999,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 1.7999999999999998,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 1.9999999999999998,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 2.1999999999999997,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 2.4,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 2.6,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 2.8000000000000003,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 3.0000000000000004,
+              "sprite": "cat-left-a"
+            },
+            {
+              "t": 3.2000000000000006,
+              "sprite": "cat-left-b"
+            },
+            {
+              "t": 3.7,
+              "x": -19,
+              "y": 10,
+              "ease": "step"
+            },
+            {
+              "t": 6,
+              "x": 0,
+              "y": 10,
+              "ease": "in-out"
+            },
+            {
+              "t": 3.7,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 3.9000000000000004,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 4.1000000000000005,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 4.300000000000001,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 4.500000000000001,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 4.700000000000001,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 4.900000000000001,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 5.100000000000001,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 5.300000000000002,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 5.500000000000002,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 5.700000000000002,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 5.900000000000002,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 6,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 7,
+              "sprite": "cat-sit-wag"
+            },
+            {
+              "t": 7.25,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 8,
+              "sprite": "cat-sit-wag"
+            },
+            {
+              "t": 8.25,
+              "sprite": "cat-sit"
+            },
+            {
+              "t": 8.6,
+              "x": 0,
+              "y": 10
+            },
+            {
+              "t": 10.4,
+              "x": 21,
+              "y": 12,
+              "ease": "in-out"
+            },
+            {
+              "t": 8.6,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 8.799999999999999,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 8.999999999999998,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 9.199999999999998,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 9.399999999999997,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 9.599999999999996,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 9.799999999999995,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 9.999999999999995,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 10.199999999999994,
+              "sprite": "cat-right-a"
+            },
+            {
+              "t": 10.399999999999993,
+              "sprite": "cat-right-b"
+            },
+            {
+              "t": 10.4,
+              "sprite": "cat-sit-left"
+            },
+            {
+              "t": 11.4,
+              "sprite": "cat-sit-left-wag"
+            },
+            {
+              "t": 11.65,
+              "sprite": "cat-sit-left"
+            },
+            {
+              "t": 12.4,
+              "sprite": "cat-sit-left-wag"
+            },
+            {
+              "t": 12.65,
+              "sprite": "cat-sit-left"
+            },
+            {
+              "t": 13.4,
+              "sprite": "cat-sit-left-wag"
+            },
+            {
+              "t": 13.65,
+              "sprite": "cat-sit-left"
+            },
+            {
+              "t": 14.4,
+              "sprite": "cat-sit-left-wag"
+            },
+            {
+              "t": 14.65,
+              "sprite": "cat-sit-left"
+            },
+            {
+              "t": 14.6,
+              "opacity": 1
+            },
+            {
+              "t": 15.799999999999999,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "heart over IGULA",
+          "sprite": "heart-2",
+          "anchor": "center",
+          "x": 14,
+          "y": 3,
+          "from": 9.6,
+          "keyframes": [
+            {
+              "t": 9.6,
+              "opacity": 0
+            },
+            {
+              "t": 10,
+              "opacity": 1
+            },
+            {
+              "t": 10,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 10.6,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 11.2,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 11.8,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 12.4,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 13,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 13.6,
+              "sprite": "heart-3"
+            },
+            {
+              "t": 14.2,
+              "sprite": "heart-2"
+            },
+            {
+              "t": 14.6,
+              "opacity": 1
+            },
+            {
+              "t": 15.799999999999999,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "IGULA",
+          "text": "IGULA",
+          "color": "#ff4fa3",
+          "anchor": "center",
+          "x": 14,
+          "y": 9,
+          "from": 9.4,
+          "keyframes": [
+            {
+              "t": 9.4,
+              "opacity": 0
+            },
+            {
+              "t": 10,
+              "opacity": 1
+            },
+            {
+              "t": 14.6,
+              "opacity": 1
+            },
+            {
+              "t": 15.799999999999999,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "michal together",
+          "sprite": "michal",
+          "x": 9,
+          "y": 13,
+          "from": 10.2,
+          "keyframes": [
+            {
+              "t": 10.2,
+              "opacity": 0
+            },
+            {
+              "t": 10.6,
+              "opacity": 1
+            },
+            {
+              "t": 10.2,
+              "x": 9
+            },
+            {
+              "t": 11.2,
+              "x": 12,
+              "ease": "out"
+            },
+            {
+              "t": 14.6,
+              "opacity": 1
+            },
+            {
+              "t": 15.799999999999999,
+              "opacity": 0
+            }
+          ]
+        },
+        {
+          "name": "iga together",
+          "sprite": "iga",
+          "x": 17,
+          "y": 13,
+          "from": 10.2,
+          "keyframes": [
+            {
+              "t": 10.2,
+              "opacity": 0
+            },
+            {
+              "t": 10.6,
+              "opacity": 1
+            },
+            {
+              "t": 10.2,
+              "x": 17
+            },
+            {
+              "t": 11.2,
+              "x": 14,
+              "ease": "out"
+            },
+            {
+              "t": 14.6,
+              "opacity": 1
+            },
+            {
+              "t": 15.799999999999999,
+              "opacity": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

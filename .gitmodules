@@ -1,0 +1,3 @@
+[submodule "pixel"]
+	path = pixel
+	url = git@github.com:mopielka/nolimits-pixel.git
