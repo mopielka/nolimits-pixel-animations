@@ -1,8 +1,10 @@
 # nolimits-pixel-animations
 
-Private animations for the Pixel LED floor. The tools (format, build, player) live in the public repo [mopielka/nolimits-pixel](https://github.com/mopielka/nolimits-pixel), included here as the `pixel/` submodule.
+Animations for the Pixel LED floor. The tools (format, build, player) live in [mopielka/nolimits-pixel](https://github.com/mopielka/nolimits-pixel), included here as the `pixel/` submodule.
 
 - `igula/` – the animation for Iga, 16.11.2026: 2:10 with Skolim – "Daj mi jedno słowo" (`skolim.mp3`, heartbeats synced to its 138.65 BPM). `generate.ts` + `sprites.ts` write `index.json`.
+
+**Download for the school:** [igula-dla-szkoly.zip](https://github.com/mopielka/nolimits-pixel-animations/releases/download/igula/igula-dla-szkoly.zip) – always the latest version: the frames ZIP for the floor, the trimmed music, preview videos with sound, the orientation test frame and `INSTRUKCJA.txt`. Update it with `scripts/publish-igula.sh` (rebuilds everything and replaces the file behind the same link).
 
 ## Setup
 
@@ -30,7 +32,7 @@ Don't copy or symlink this animation into `pixel/animations/` – the player bun
 
 ## Music
 
-This repo is private, so the song can live here: put it in the animation folder and reference it from `generate.ts` (`audio: { src: 'song.mp3' }`). It's included in the build and preview videos. Never copy it into the public `pixel` repo – its `.gitignore` and deploy script reject audio files.
+The song lives here, next to the animation: put it in the animation folder and reference it from `generate.ts` (`audio: { src: 'song.mp3' }`). It's included in the build and preview videos. Never copy it into the public `pixel` repo – its `.gitignore` and deploy script reject audio files.
 
 ## Updating the tools
 

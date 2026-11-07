@@ -1,0 +1,31 @@
+Animacja na podłogę Pixel – dla Igi, 16.11.2026
+=================================================
+
+Co jest w paczce
+----------------
+igula.zip              – to wgrywamy na podłogę: 3251 klatek PNG 28 × 16 px
+                         (klatka_0001.png … klatka_3251.png), 25 klatek/s,
+                         razem 2 min 10 s.
+skolim.mp3             – muzyka (Skolim – „Daj mi jedno słowo”), przycięta
+                         dokładnie do długości animacji (2:10). Startuje razem
+                         z pierwszą klatką, bez przesunięcia. Pod koniec sama
+                         się wycisza.
+podglad.mp4            – podgląd tego samego z muzyką, powiększony bez
+                         wygładzania (560 × 320, każdy kafel = kwadrat 20 × 20).
+podglad-podloga.mp4    – to samo z cienkimi szczelinami między kaflami.
+test-orientacji.zip    – jedna klatka testowa ze strzałką „UP”: czerwony
+                         narożnik = lewy górny róg obrazu, zielony = prawy górny.
+
+Orientacja
+----------
+Obraz jest poziomy: 28 kafli szeroko, 16 wysoko. Iga będzie stała przy
+DŁUŻSZYM boku podłogi. Dolna krawędź obrazu (rząd 16) ma być po jej stronie –
+wtedy napisy czyta się normalnie, „od siebie”. Strzałka „UP” z klatki testowej
+ma wskazywać od Igi w głąb sali.
+
+Długość
+-------
+Animacja trwa 2:10 (dłużej niż typowa minuta). Ostatnia minuta to spokojnie
+pulsujące serce – żeby muzyka i światło nie urwały się nagle.
+
+Pytania – do Michała.
