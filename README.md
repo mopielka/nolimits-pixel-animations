@@ -22,7 +22,9 @@ node --watch igula/generate.ts                           # …on every save
 (cd pixel && npm run build -- ../igula --out ../out)     # → out/igula/: PNG frames, igula.zip for the school, previews
 ```
 
-**Watch it:** open https://mopielka.github.io/nolimits-pixel-player/ and drop `igula/index.json` onto the page (or a ZIP of the folder, which also carries the music). Locally, `(cd pixel && npm run web)` gives the same player.
+**Watch it while editing:** open https://mopielka.github.io/nolimits-pixel-player/ in Chrome or Edge, click **Otwórz folder…** and pick this repo's folder (it lists every animation in it) or `igula/` itself. With `node --watch igula/generate.ts` running, every save shows up in the player within a second, at the same moment and with the music. After reloading the page, **📁 Wznów** reopens the folder. Other browsers load the folder once (drag it onto the page).
+
+**The finished files:** drop `out/igula/igula.zip` together with `out/igula/skolim.mp3` onto the player to check exactly what the school gets.
 
 Don't copy or symlink this animation into `pixel/animations/` – the player bundles everything there, and `npm run web:deploy` would publish it.
 
