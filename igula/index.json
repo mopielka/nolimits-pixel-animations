@@ -160,6 +160,34 @@
         "zzzz"
       ]
     },
+    "ghost-a": {
+      "palette": {
+        "w": "#e8f4ff"
+      },
+      "rows": [
+        "..www..",
+        ".wwwww.",
+        "ww.w.ww",
+        "wwwwwww",
+        "wwwwwww",
+        "wwwwwww",
+        "w.w.w.w"
+      ]
+    },
+    "ghost-b": {
+      "palette": {
+        "w": "#e8f4ff"
+      },
+      "rows": [
+        "..www..",
+        ".wwwww.",
+        "ww.w.ww",
+        "wwwwwww",
+        "wwwwwww",
+        "wwwwwww",
+        ".w.w.w."
+      ]
+    },
     "house": {
       "palette": {
         "y": "#ffcc33"
@@ -361,12 +389,119 @@
       },
       "layers": [
         {
+          "name": "ghost",
+          "sprite": "ghost-a",
+          "x": 3,
+          "y": 1,
+          "keyframes": [
+            {
+              "t": 0,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 0.6,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 1.2,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 1.7999999999999998,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 2.4,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 3,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 3.6,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 4.2,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 4.8,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 5.3999999999999995,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 5.999999999999999,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 6.599999999999999,
+              "y": 2,
+              "ease": "in-out",
+              "sprite": "ghost-b"
+            },
+            {
+              "t": 7.199999999999998,
+              "y": 1,
+              "ease": "in-out",
+              "sprite": "ghost-a"
+            },
+            {
+              "t": 7.6082910320461306,
+              "y": 1
+            },
+            {
+              "t": 7.808291032046131,
+              "y": 0,
+              "ease": "out"
+            },
+            {
+              "t": 8.05829103204613,
+              "y": 1,
+              "ease": "in"
+            },
+            {
+              "t": 9.3,
+              "opacity": 1
+            },
+            {
+              "t": 9.9,
+              "opacity": 0
+            }
+          ]
+        },
+        {
           "name": "BOO",
           "text": "BOO",
           "color": "#ffd23f",
-          "anchor": "center",
-          "x": 14,
-          "y": 4.5,
+          "x": 13,
+          "y": 2,
           "keyframes": [
             {
               "t": 9.3,
@@ -383,7 +518,7 @@
           "text": "1.06",
           "anchor": "center",
           "x": 14,
-          "y": 11,
+          "y": 12,
           "keyframes": [
             {
               "t": 3.3,

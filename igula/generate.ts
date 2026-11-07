@@ -374,6 +374,15 @@ function dateTicks(from: number): Keyframe[] {
   });
 }
 
+/** Bobs up and down a pixel, rippling its hem on each turn. */
+function floating(from: number, to: number): Keyframe[] {
+  const keys: Keyframe[] = [];
+  for (let t = from, i = 0; t < to; t += 0.6, i++) {
+    keys.push({ t, y: i % 2 ? 2 : 1, ease: 'in-out', sprite: i % 2 ? 'ghost-b' : 'ghost-a' });
+  }
+  return keys;
+}
+
 const ticks = dateTicks(3.3);
 const STOPPED = ticks.at(-1)!.t;
 const INTRO_FADE = 9.3;
@@ -384,13 +393,27 @@ const intro: LayersScene = {
   duration: LENGTH.intro,
   transition: { type: 'fade', duration: 3 },
   layers: [
-    { name: 'BOO', text: 'BOO', color: '#ffd23f', anchor: 'center', x: MIDDLE.x, y: 4.5, keyframes: fadeOut(INTRO_FADE, 0.6) },
+    {
+      name: 'ghost',
+      sprite: 'ghost-a',
+      x: 3,
+      y: 1,
+      keyframes: [
+        ...floating(0, STOPPED),
+        // A little hop when the dates stop on 15.07.
+        { t: STOPPED, y: 1 },
+        { t: STOPPED + 0.2, y: 0, ease: 'out' },
+        { t: STOPPED + 0.45, y: 1, ease: 'in' },
+        ...fadeOut(INTRO_FADE, 0.6),
+      ],
+    },
+    { name: 'BOO', text: 'BOO', color: '#ffd23f', x: 13, y: 2, keyframes: fadeOut(INTRO_FADE, 0.6) },
     {
       name: 'dates',
       text: ticks[0].text,
       anchor: 'center',
       x: MIDDLE.x,
-      y: 11,
+      y: 12,
       keyframes: [
         ...ticks,
         // The day it stops on turns Michał's colour: his first message.

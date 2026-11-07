@@ -96,6 +96,8 @@ const CAT_TAIL_DOWN = ['....o.k', 'kowwwew', '.wkkwwn'];
 const flip = (rows: string[]) => rows.map((r) => [...r].reverse().join(''));
 const cat = (rows: string[]): SpriteDef => ({ palette: CAT, rows });
 
+const GHOST = ['..www..', '.wwwww.', 'ww.w.ww', 'wwwwwww', 'wwwwwww', 'wwwwwww'];
+
 const HOUSE: SpriteDef = {
   palette: { y: '#ffcc33' },
   rows: [
@@ -124,6 +126,9 @@ export const sprites: Record<string, SpriteDef> = {
   // Curled up facing left, eyes closed.
   'cat-sleep': cat(['k.o.....', 'wkwwowkk', 'nwwwwwwk']),
   z: { palette: { z: '#bfe8ff' }, rows: ['zzzz', '..z.', '.z..', 'zzzz'] },
+  // A little ghost for Boo; the two frames ripple its hem as it floats.
+  'ghost-a': { palette: { w: '#e8f4ff' }, rows: [...GHOST, 'w.w.w.w'] },
+  'ghost-b': { palette: { w: '#e8f4ff' }, rows: [...GHOST, '.w.w.w.'] },
   house: HOUSE,
   iga: dot(IGA),
   michal: dot(MICHAL),
