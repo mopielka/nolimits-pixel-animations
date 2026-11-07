@@ -1678,8 +1678,8 @@
           ]
         },
         {
-          "name": "cat moving in",
-          "sprite": "cat-left-a",
+          "name": "cat staying in Konin",
+          "sprite": "cat-sit-left",
           "x": 20,
           "y": 0,
           "from": 1,
@@ -1693,119 +1693,72 @@
               "opacity": 1
             },
             {
-              "t": 3.0999999999999996,
-              "x": 20,
-              "y": 0
+              "t": 1,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 7.3,
-              "x": 3,
-              "y": 2,
-              "ease": "in-out"
+              "t": 2,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 3.0999999999999996,
-              "sprite": "cat-left-a"
+              "t": 2.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 3.3,
-              "sprite": "cat-left-b"
+              "t": 3,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 3.5,
-              "sprite": "cat-left-a"
+              "t": 3.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 3.7,
-              "sprite": "cat-left-b"
+              "t": 4,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 3.9000000000000004,
-              "sprite": "cat-left-a"
+              "t": 4.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 4.1000000000000005,
-              "sprite": "cat-left-b"
+              "t": 5,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 4.300000000000001,
-              "sprite": "cat-left-a"
+              "t": 5.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 4.500000000000001,
-              "sprite": "cat-left-b"
+              "t": 6,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 4.700000000000001,
-              "sprite": "cat-left-a"
+              "t": 6.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 4.900000000000001,
-              "sprite": "cat-left-b"
+              "t": 7,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 5.100000000000001,
-              "sprite": "cat-left-a"
+              "t": 7.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 5.300000000000002,
-              "sprite": "cat-left-b"
+              "t": 8,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 5.500000000000002,
-              "sprite": "cat-left-a"
+              "t": 8.25,
+              "sprite": "cat-sit-left"
             },
             {
-              "t": 5.700000000000002,
-              "sprite": "cat-left-b"
+              "t": 9,
+              "sprite": "cat-sit-left-wag"
             },
             {
-              "t": 5.900000000000002,
-              "sprite": "cat-left-a"
-            },
-            {
-              "t": 6.100000000000002,
-              "sprite": "cat-left-b"
-            },
-            {
-              "t": 6.3000000000000025,
-              "sprite": "cat-left-a"
-            },
-            {
-              "t": 6.500000000000003,
-              "sprite": "cat-left-b"
-            },
-            {
-              "t": 6.700000000000003,
-              "sprite": "cat-left-a"
-            },
-            {
-              "t": 6.900000000000003,
-              "sprite": "cat-left-b"
-            },
-            {
-              "t": 7.100000000000003,
-              "sprite": "cat-left-a"
-            },
-            {
-              "t": 7.3,
-              "sprite": "cat-sit"
-            },
-            {
-              "t": 8.3,
-              "sprite": "cat-sit-wag"
-            },
-            {
-              "t": 8.55,
-              "sprite": "cat-sit"
-            },
-            {
-              "t": 9.3,
-              "sprite": "cat-sit-wag"
-            },
-            {
-              "t": 9.55,
-              "sprite": "cat-sit"
+              "t": 9.25,
+              "sprite": "cat-sit-left"
             },
             {
               "t": 9.8,

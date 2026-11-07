@@ -247,19 +247,13 @@ const move2027: LayersScene = {
     movingDot('iga', { x: 23, y: 4 }, { x: 7, y: 13 }),
     { name: 'house', sprite: 'house', ...HOUSE_AT, from: TRAVEL.to, keyframes: [...fadeIn(TRAVEL.to, 0.7), ...fadeOut(MOVE_FADE, 0.6)] },
     {
-      name: 'cat moving in',
-      sprite: 'cat-left-a',
+      // Iga's cats stay in Konin: it sits there and watches the dots leave.
+      name: 'cat staying in Konin',
+      sprite: 'cat-sit-left',
       x: 20,
       y: 0,
       from: 1,
-      keyframes: [
-        ...fadeIn(1, 0.5),
-        { t: TRAVEL.from + 0.3, x: 20, y: 0 },
-        { t: TRAVEL.to + 0.3, x: 3, y: 2, ease: 'in-out' },
-        ...walk(TRAVEL.from + 0.3, TRAVEL.to + 0.3, 'left'),
-        ...sitAndWag(TRAVEL.to + 0.3, MOVE_FADE),
-        ...fadeOut(MOVE_FADE, 0.6),
-      ],
+      keyframes: [...fadeIn(1, 0.5), ...sitAndWag(1, MOVE_FADE, 'left'), ...fadeOut(MOVE_FADE, 0.6)],
     },
     { name: 'WRO', text: 'WRO', color: MICHAL, x: 14, y: 10, from: 8, keyframes: [...fadeIn(8), ...fadeOut(MOVE_FADE, 0.6)] },
   ],
